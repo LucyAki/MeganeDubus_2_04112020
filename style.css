@@ -1,0 +1,60 @@
+/*En tête de la page.*/
+
+header
+{ 
+	display: flex;
+	justify-content: space-between;
+	/*Placement du header en général.*/
+}
+
+/*Menu de navigation.*/
+
+#nav_1
+{
+	display: flex;
+	justify-content: space-between;
+	/*Placement général du menu de navigation.*/
+}
+
+.navig
+{
+	margin-left: 15px;
+	margin-right: 50px;
+	list-style-type: none;
+	/*Ajustement du menu de navigation et retrait des puces de la liste.*/
+}
+
+.activities
+{
+	text-decoration: none;
+	color: black;
+	/*Retrait du soulignement du lien activités et couleur noire.*/
+}
+
+.activities:hover
+{
+	color: #0065FC;
+	border-top: 2px #0065FC solid;
+	/*Changement de la couleur et apparition de la bordure supérieure (bleue) au passage de la souris sur le lien acitivités.*/
+}
+
+#inscription
+{
+	color: #0065FC;
+	text-decoration: none;
+	/*Couleur bleue pour le bouton d'inscription et retrait du soulignement du lien.*/
+}
+
+#inscription:hover
+{
+	border-top: 2px #0065FC solid;
+	/*Modification de la taille et ajout de la bordure supérieure (bleue) au passage de la souris sur le bouton inscription.*/
+}
+
+.here
+{
+	text-decoration: none;
+	color: #0065FC;
+	border-top: 2px #0065FC solid;
+	/*Retrait du soulignement du lien hébergement, couleur bleue et ajout d'une bordure (bleue). Page où se trouve l'utilisateur.*/
+}
