@@ -7,6 +7,14 @@ header
 	/*Placement du header en général.*/
 }
 
+header img
+{
+
+	height:50px;
+	width:100px;
+
+}
+
 /*Menu de navigation.*/
 
 #nav_1
