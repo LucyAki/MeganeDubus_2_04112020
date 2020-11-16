@@ -9,10 +9,9 @@ header
 
 header img
 {
-
 	height:50px;
 	width:100px;
-
+	/*Taille du logo de l'en-tête*/
 }
 
 /*Menu de navigation.*/
@@ -43,8 +42,9 @@ header img
 {
 	color: #0065FC;
 	border-top: 2px #0065FC solid;
-	padding-top: 8px;
-	/*Changement de la couleur et apparition de la bordure supérieure (bleue) au passage de la souris sur le lien acitivités.*/
+	padding-top: 23px;
+	/*Changement de la couleur et apparition de la bordure supérieure (bleue) au passage de la souris sur le lien acitivités.
+	Elargissement marge intérieure bordure top*/
 }
 
 #inscription
@@ -57,7 +57,9 @@ header img
 #inscription:hover
 {
 	border-top: 2px #0065FC solid;
-	/*Modification de la taille et ajout de la bordure supérieure (bleue) au passage de la souris sur le bouton inscription.*/
+	padding-top: 23px;
+	/*Modification de la taille et ajout de la bordure supérieure (bleue) au passage de la souris sur le bouton inscription. 
+	Elargissement marge intérieure bordure top*/
 }
 
 .here
@@ -65,5 +67,7 @@ header img
 	text-decoration: none;
 	color: #0065FC;
 	border-top: 2px #0065FC solid;
-	/*Retrait du soulignement du lien hébergement, couleur bleue et ajout d'une bordure (bleue). Page où se trouve l'utilisateur.*/
+	padding-top: 23px;
+	/*Retrait du soulignement du lien hébergement, couleur bleue et ajout d'une bordure (bleue). Page où se trouve l'utilisateur. 
+	Elargissement marge intérieure bordure top*/
 }
