@@ -3,23 +3,27 @@
 <head>
 	<title>Reservia</title>
 	<meta charset="utf-8">
-	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<link rel="stylesheet" type="text/css" href="../assets/css/style.css">
+	<link rel="stylesheet" type="text/css" href="../vendors/fontawesome-free-5.15.1-web/css/all.css">
 </head>
 <body>
 
+<!-- En-tête de la page-->
+
 	<header>
-	<!-- En-tête de la page-->
 
 		<div>
-			<img src="images/Reservia.png" alt="logo Reservia" title="Reservia">
+			<img src="../assets/images/Reservia.png" alt="logo Reservia" title="Reservia">
 		</div>
 		<!--Titre principal (Logo)-->
 
+	<!-- Menu de navigation principal -->
+
 		<nav>
-		<!-- Menu de navigation principal -->
 
 			<ul id="nav_1">
 			<!-- Onglets de nav -->
+
 				<li class="navig">
 					<a class="here" href="#hebergement">Hébergements</a>
 				</li>
@@ -31,14 +35,18 @@
 				<li class="navig">
 					<a id="inscription" href="">S'inscrire</a>
 				</li>
+
 			</ul>
 
 		</nav>
 
 	</header>
 
-	<section id="recherche">
-	<!--Section recherche-->
+<!--Première section de la page, section concernant la recherche-->
+
+	<section id="sec_recherche">
+
+	<!--Les titres-->
 		
 		<div id="titres">
 
@@ -49,13 +57,81 @@
 
 		</div>
 
-		<div id="barre">
-		<!--Barre de recherche-->
+	<!--La Barre de recherche-->	
 
+		<div id="barre">
+
+			<i class="fas fa-map-marker-alt"></i>
+			<!--Icône de map avant la barre de recherche-->
 			
-			
+			<form method="post" action="">
+			<!--Début formulaire de la barre de recherche -->
+
+				<input title="Entrez la ville de votre choix" type="text" name="Recherche" id="saisie" placeholder="Marseille, France" required>
+				<!--Saisie de la recherche-->
+
+				<input id="bouton" type="search" value="Rechercher">
+				<!--Bouton pour lancer la recherche-->
+			</form>
 
 		</div>
+	
+	<!--Les filtres de recherche-->
+
+		<div id="les_filtres">
+
+			<p>Filtres</p>
+
+		<!--Filtre économique-->
+
+			<a title="Ajouter le critère économique" href="">
+
+				<i class="fas fa-money-bill-wave"><span id="money">Économique</span> </i>
+				<!--Économque (icône)-->
+			</a>
+
+		<!--Filtre familial-->
+
+			<a title="Ajouter le critère familial" href="">
+		
+				<i class="fas fa-child"><span id="family">Familial</span> </i>
+				<!--Familial (icône)-->
+
+			</a>
+
+		<!--Filtre romantique-->
+
+			<a title="Ajouter le critère romantique" href="">
+			
+				<i class="fas fa-heart"><span id="love">Romantique</span> </i>
+				<!--Romantique (icône)-->
+			</a>
+
+		<!--Filtres animaux autorisés-->
+			
+			<a title="Ajouter le critère des animaux" href="">
+
+				<i class="fas fa-dog"><span id="animaux">Animaux autorisés</span> </i>
+				<!--Animaux autorisés (icône)-->
+
+			</a>
+
+		</div>
+
+	<!--Information logements disponibles-->
+		
+	<div id="info">
+
+		<i class="fas fa-info"> <span id="logements"> Plus de 500 logements sont disponibles dans cette ville</span></i>
+		<!--Info logements (icône)-->
+		
+	</div>
+
+	</section>
+
+<!--Deuxième section de la page, section concernant les hébergements-->
+	
+	<section id="sec_hebergements">
 
 	</section>
 
