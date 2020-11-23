@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Reservia</title>
+	<meta charset="utf-8">
+	<link rel="stylesheet" type="text/css" href="../assets/css/style.css">
+	<link rel="stylesheet" type="text/css" href="../vendors/fontawesome-free-5.15.1-web/css/all.css">
+</head>
+<body>
+
+<!-- En-tête de la page-->
+
+	<header>
+
+		<div>
+			<img src="../assets/images/Reservia.png" alt="logo Reservia" title="Reservia">
+		</div>
+		<!--Titre principal (Logo)-->
+
+	<!-- Menu de navigation principal -->
+
+		<nav>
+
+			<ul id="nav_1">
+			<!-- Onglets de nav -->
+
+				<li class="navig">
+					<a class="here" href="#hebergement">Hébergements</a>
+				</li>
+
+				<li class="navig">
+					<a class="activities" href="#activites">Activités</a>
+				</li>
+
+				<li class="navig">
+					<a id="inscription" href="">S'inscrire</a>
+				</li>
+
+			</ul>
+
+		</nav>
+
+	</header>
+
+<!--Première section de la page, section concernant la recherche-->
+
+	<section id="sec_recherche">
+
+	<!--Les titres-->
+		
+		<div id="titres">
+
+			<h2 id="search_title">Trouvez votre hébergement pour des vacances de rêve</h2>
+			<!--Titre de la section-->
+
+			<p>En plein centre ville ou en plein nature</p>
+
+		</div>
+
+	<!--La Barre de recherche-->	
+
+		<div id="barre">
+			
+			<form method="post" action="">
+			<!--Début formulaire de la barre de recherche -->
+			
+				<i class="fas fa-map-marker-alt map_i"></i><input title="Entrez la ville de votre choix" type="search" name="Recherche" id="saisie" placeholder="Marseille, France" required><input id="bouton" type="submit" value="Rechercher">
+				<!--Icône de map avant la barre de recherche + Saisie de la recherche + Bouton pour lancer la recherche-->
+			</form>
+
+		</div>
+	
+	<!--Les filtres de recherche-->
+
+		<div id="les_filtres">
+
+			<div id="filtre">
+				<span>Filtres</span>
+			</div>
+		<!--Filtre économique-->
+
+			<a title="Ajouter le critère économique" href="" class="esp_filtres">
+				<span class="span_filtres"><i class="fas fa-money-bill-wave icones"></i><p>Économique</p></span>
+				<!--Économique (icône)-->
+			</a>
+
+		<!--Filtre familial-->
+
+			<a title="Ajouter le critère familial" href="" class="esp_filtres" id="fam">
+				<span class="span_filtres"><i class="fas fa-child icones" id="famille"></i><p>Familial</p></span>
+				<!--Familial (icône)-->
+			</a>
+
+		<!--Filtre romantique-->
+
+			<a title="Ajouter le critère romantique" href="" class="esp_filtres">
+				<span class="span_filtres"><i class="fas fa-heart icones"></i><p>Romantique</p></span>
+				<!--Romantique (icône)-->
+			</a>
+
+		<!--Filtres animaux autorisés-->
+			
+			<a title="Ajouter le critère des animaux" href="" class="esp_filtres">
+				<span class="span_filtres"><i class="fas fa-dog icones"></i><p>Animaux autorisés</p></span>
+				<!--Animaux autorisés (icône)-->
+			</a>
+
+		</div>
+
+	<!--Information logements disponibles-->
+		
+	<div id="info">
+
+		<i class="fas fa-info icone_logement"></i><p id="info_logement">Plus de 500 logements sont disponibles dans cette ville</p>
+		<!--Info logements (icône)-->
+		
+	</div>
+
+	</section>
+
+<!--Deuxième section de la page, section concernant les hébergements-->
+	
+	<section id="sec_hebergements">
+
+	</section>
+
+</body>
+</html>
