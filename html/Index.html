@@ -60,18 +60,12 @@
 	<!--La Barre de recherche-->	
 
 		<div id="barre">
-
-			<i class="fas fa-map-marker-alt"></i>
-			<!--Icône de map avant la barre de recherche-->
 			
 			<form method="post" action="">
 			<!--Début formulaire de la barre de recherche -->
-
-				<input title="Entrez la ville de votre choix" type="text" name="Recherche" id="saisie" placeholder="Marseille, France" required>
-				<!--Saisie de la recherche-->
-
-				<input id="bouton" type="search" value="Rechercher">
-				<!--Bouton pour lancer la recherche-->
+			
+				<i class="fas fa-map-marker-alt map_i"></i><input title="Entrez la ville de votre choix" type="search" name="Recherche" id="saisie" placeholder="Marseille, France" required><input id="bouton" type="submit" value="Rechercher">
+				<!--Icône de map avant la barre de recherche + Saisie de la recherche + Bouton pour lancer la recherche-->
 			</form>
 
 		</div>
@@ -80,40 +74,35 @@
 
 		<div id="les_filtres">
 
-			<p>Filtres</p>
-
+			<div id="filtre">
+				<span>Filtres</span>
+			</div>
 		<!--Filtre économique-->
 
-			<a title="Ajouter le critère économique" href="">
-
-				<i class="fas fa-money-bill-wave"><span id="money">Économique</span> </i>
-				<!--Économque (icône)-->
+			<a title="Ajouter le critère économique" href="" class="esp_filtres">
+				<span class="span_filtres"><i class="fas fa-money-bill-wave icones"></i><p>Économique</p></span>
+				<!--Économique (icône)-->
 			</a>
 
 		<!--Filtre familial-->
 
-			<a title="Ajouter le critère familial" href="">
-		
-				<i class="fas fa-child"><span id="family">Familial</span> </i>
+			<a title="Ajouter le critère familial" href="" class="esp_filtres" id="fam">
+				<span class="span_filtres"><i class="fas fa-child icones" id="famille"></i><p>Familial</p></span>
 				<!--Familial (icône)-->
-
 			</a>
 
 		<!--Filtre romantique-->
 
-			<a title="Ajouter le critère romantique" href="">
-			
-				<i class="fas fa-heart"><span id="love">Romantique</span> </i>
+			<a title="Ajouter le critère romantique" href="" class="esp_filtres">
+				<span class="span_filtres"><i class="fas fa-heart icones"></i><p>Romantique</p></span>
 				<!--Romantique (icône)-->
 			</a>
 
 		<!--Filtres animaux autorisés-->
 			
-			<a title="Ajouter le critère des animaux" href="">
-
-				<i class="fas fa-dog"><span id="animaux">Animaux autorisés</span> </i>
+			<a title="Ajouter le critère des animaux" href="" class="esp_filtres">
+				<span class="span_filtres"><i class="fas fa-dog icones"></i><p>Animaux autorisés</p></span>
 				<!--Animaux autorisés (icône)-->
-
 			</a>
 
 		</div>
@@ -122,7 +111,7 @@
 		
 	<div id="info">
 
-		<i class="fas fa-info"> <span id="logements"> Plus de 500 logements sont disponibles dans cette ville</span></i>
+		<i class="fas fa-info icone_logement"></i><p id="info_logement">Plus de 500 logements sont disponibles dans cette ville</p>
 		<!--Info logements (icône)-->
 		
 	</div>

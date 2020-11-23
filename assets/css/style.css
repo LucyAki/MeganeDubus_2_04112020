@@ -51,6 +51,7 @@ header img
 {
 	text-decoration: none;
 	color: black;
+	padding: 23px 20px 0 20px;
 	/*Retrait du soulignement du lien activités et couleur noire.*/
 }
 
@@ -58,7 +59,6 @@ header img
 {
 	color: #0065FC;
 	border-top: 2px #0065FC solid;
-	padding-top: 23px;
 	/*Changement de la couleur et apparition de la bordure supérieure (bleue) au passage de la souris sur le lien acitivités.
 	Elargissement marge intérieure bordure top*/
 }
@@ -67,13 +67,13 @@ header img
 {
 	color: #0065FC;
 	text-decoration: none;
+	padding: 23px 20px 0 20px;
 	/*Couleur bleue pour le bouton d'inscription et retrait du soulignement du lien.*/
 }
 
 #inscription:hover
 {
 	border-top: 2px #0065FC solid;
-	padding-top: 23px;
 	/*Modification de la taille et ajout de la bordure supérieure (bleue) au passage de la souris sur le bouton inscription. 
 	Elargissement marge intérieure bordure top*/
 }
@@ -83,19 +83,134 @@ header img
 	text-decoration: none;
 	color: #0065FC;
 	border-top: 2px #0065FC solid;
-	padding-top: 23px;
+	padding: 23px 20px 0 20px;
 	/*Retrait du soulignement du lien hébergement, couleur bleue et ajout d'une bordure (bleue). Page où se trouve l'utilisateur. 
 	Elargissement marge intérieure bordure top*/
 }
 
 /*Section 1, recherche*/
 
+	/*La barre de recherche*/
+
 #barre
-{
+{		
 	display: flex;
+	margin-left: 10px;
 }
+
+.map_i
+{
+	align-self: center;
+	padding: 11px;
+	border: none;
+	border-top-left-radius: 12px;
+	border-bottom-left-radius: 12px;
+	background-color: #F2F2F2;
+	
+}
+
+#saisie::placeholder
+{
+	font-family: raleway;
+	font-weight: bold;
+}
+
+#saisie
+{
+	padding: 9px;
+	margin-left: 0;
+	border: 2px solid #F2F2F2;
+	border-right: none;
+}
+
+#bouton
+{
+	font-family: raleway;
+	font-weight: bold;
+	border: none;
+	border-top-right-radius: 12px;
+	border-bottom-right-radius: 12px;
+	background-color:#0065FC;
+	color: white;
+	padding: 11px;
+}
+	
+	/*Les filtres*/
 
 #les_filtres
 {
 	display: flex;
+	margin-top: 20px;
+}
+
+#filtre
+{
+	font-weight: bold;
+	align-self: center;
+}
+
+.span_filtres
+{
+	display: flex;
+}
+
+		/*Les icônes*/
+
+.icones
+{
+	margin-right: 10px;
+	color:#0065FC;
+	background-color:#DEEBFF;
+	border-radius: 700px;
+	height: 36px;
+	width: 36px;
+	text-align: center;
+	line-height: 36px !important;
+}
+
+.esp_filtres
+{
+	border: 3px solid #F2F2F2;
+	border-left: none;
+	border-radius: 40% / 130%;
+	text-decoration: none;
+	color: black;
+	margin: 0 20px 0 20px;
+	padding: 0 10px 0 0;
+	line-height: 3px;
+	height: 33px;
+}
+
+.esp_filtres:hover
+{
+	box-shadow: 1px 5px 7px gray;
+}
+
+#fam
+{
+	padding-right: 25px;
+}
+
+#famille
+{
+	margin-right: 15px;
+}
+
+	/*La phrase information logements disponibles*/
+
+#info
+{
+	display: flex;
+	margin-top: 20px;
+}
+
+.icone_logement
+{
+	align-self: center;
+	margin: 0 11px 0 2px;
+	color: #0065FC;
+	font-size: 12px;
+	border: 2px solid #F2F2F2;
+	padding: 5px 10px 5px 10px;
+	border-radius: 500px;
 }
