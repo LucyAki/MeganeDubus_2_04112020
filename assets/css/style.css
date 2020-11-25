@@ -214,3 +214,114 @@ header img
 	padding: 5px 10px 5px 10px;
 	border-radius: 500px;
 }
+
+/*Section Hébergements*/
+
+	/*Titre*/
+
+#heberg_title
+{
+	margin-left: 32px;
+}
+
+	/*Container global*/
+
+#sec_hebergements
+{
+	background-color: #F2F2F2;
+	width: 870px;
+	height: 700px;
+	padding-top: 15px;
+	border-radius: 40px / 40px;
+}
+
+	/*Containers des "cartes" d'hébergements*/
+
+#les_hebergements
+{
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-around;
+}
+
+
+	/*Container liens*/
+
+.lien_heberg
+{
+	background-color: white;
+	padding: 8px;
+	height: 200px;
+	border-radius: 20px / 20px;
+	margin-bottom: 50px;
+	text-decoration: none;
+	color: black;
+}
+
+.lien_heberg:hover
+{
+	box-shadow: 5px 8px 13px gray;
+}
+
+	/*Images*/
+
+.heberg_img
+{
+	height: 110px;
+	overflow: hidden;
+	border-radius: 15px / 15px;
+	border-bottom-left-radius: 0px;
+	border-bottom-right-radius: 0px;
+}
+
+.img_sec_1
+{
+	width: 220px;
+	height: auto;
+	/*height: auto; permet de garder le ratio de l'image*/
+}
+
+.move_img
+{
+	position: relative;
+	bottom: 20px;
+}
+
+.move_img_2
+{
+	position: relative;
+	bottom: 50px;
+}
+
+.move_img_big
+{
+	position: relative;
+	bottom: 120px;
+}
+
+	/*Noms et Prix*/
+.np
+{
+	line-height: 3px;
+}
+
+	/*étoiles*/
+
+.stars
+{
+	color: #0065FC;
+}
+
+.stars_none
+{
+	color: #F2F2F2;
+}
+
+	/*Afficher plus*/
+
+#afficher_+
+{
+	text-decoration: none;
+	color: black;
+
+}
