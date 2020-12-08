@@ -81,10 +81,16 @@ header img
 .here
 {
 	text-decoration: none;
+	color: black;
+	padding: 23px 20px 0 20px;
+	/*Retrait du soulignement du lien activités et couleur noire.*/
+}
+
+.here:hover
+{
 	color: #0065FC;
 	border-top: 2px #0065FC solid;
-	padding: 23px 20px 0 20px;
-	/*Retrait du soulignement du lien hébergement, couleur bleue et ajout d'une bordure (bleue). Page où se trouve l'utilisateur. 
+	/*Changement de la couleur et apparition de la bordure supérieure (bleue) au passage de la souris sur le lien acitivités.
 	Elargissement marge intérieure bordure top*/
 }
 
@@ -217,22 +223,140 @@ header img
 
 /*Section Hébergements*/
 
-	/*Titre*/
-
-#heberg_title
-{
-	margin-left: 32px;
-}
-
 	/*Container global*/
 
 #sec_hebergements
 {
-	background-color: #F2F2F2;
-	width: 870px;
-	height: 700px;
+	display: flex;
+	flex-direction: row-reverse;
+	justify-content: space-around;
+	width: 100%;
+	height: 665px;
 	padding-top: 15px;
-	border-radius: 40px / 40px;
+	margin-bottom: 60px;
+}
+
+#parent_hebergements
+{
+	display: flex;
+	width: 100%;
+	justify-content: center;
+}
+
+#hebergements
+{
+	width: 60%;
+	background-color: #F2F2F2;
+	border-radius: 20px / 20px;
+}
+
+		/*Les plus populaires*/
+
+	/*titre*/
+
+#populaire
+{
+	width: 25%;
+	border-radius: 20px / 20px;
+	background-color: #F2F2F2;
+}
+
+#tete_pop
+{
+	display: flex;
+	justify-content: space-around;
+}
+
+#icone_pop
+{
+	align-self: center;
+	font-size: 25px;
+}
+
+	/*Container global*/
+
+#pop_fiches
+{
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	height: 80%;
+}
+
+	/*liens*/
+
+.lien_pop
+{
+	display: flex;
+	background-color: white;
+	padding: 8px;
+	width: 78%;
+	height: 25%;
+	border-radius: 20px / 20px;
+	margin-bottom: 50px;
+	text-decoration: none;
+	color: black;
+	box-shadow: 1px 1px 5px gray;
+}
+
+.lien_pop:hover
+{
+	box-shadow: 15px 15px 20px gray;
+}
+
+	/*Images*/
+
+.pop_img
+{
+	min-width: 43%;
+	max-width: 43%;
+	height: auto;
+	overflow: hidden;
+	border-radius: 15px / 15px;
+	border-bottom-right-radius: 0em;
+	border-top-right-radius: 0em;
+	margin-right: 5%;
+}
+
+.img_pop
+{
+	width: auto;
+	height: 143px;
+
+}
+
+.move_img_pop
+{
+	position: relative;
+	right: 32%;
+}
+
+.move_img_pop2
+{
+	width: 100%;
+}
+
+	/*contenu*/
+
+.pop_contenu
+{
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+}
+
+.pop_text
+{
+	margin: 8% 0 10% 0;
+}
+
+		/*hébergements*/
+
+	/*Titre*/
+
+#heberg_title
+{
+	margin-left: 8%;
 }
 
 	/*Containers des "cartes" d'hébergements*/
@@ -242,8 +366,8 @@ header img
 	display: flex;
 	flex-wrap: wrap;
 	justify-content: space-around;
+	width: 90%;
 }
-
 
 	/*Container liens*/
 
@@ -256,11 +380,12 @@ header img
 	margin-bottom: 50px;
 	text-decoration: none;
 	color: black;
+	box-shadow: 1px 1px 5px gray;
 }
 
 .lien_heberg:hover
 {
-	box-shadow: 5px 8px 13px gray;
+	box-shadow: 15px 15px 20px gray;
 }
 
 	/*Images*/
@@ -305,23 +430,212 @@ header img
 	line-height: 3px;
 }
 
+.euros
+{
+	font-weight: bold;
+}
+
 	/*étoiles*/
 
 .stars
 {
 	color: #0065FC;
+	text-shadow: 1px 0 1px gray;
 }
 
 .stars_none
 {
 	color: #F2F2F2;
+	text-shadow: 1px 0 1px gray;
 }
 
 	/*Afficher plus*/
 
-#afficher_+
+#afficher
+{
+	text-decoration: none;
+	color: black;
+}
+
+#afficher:hover
+{
+	text-decoration: underline;
+}
+
+#afficher_plus_h4
+{
+	margin: 0 0 0 8%;
+}
+
+/*Section Activités*/
+
+	/*Containers globaux*/
+
+#sec3
+{
+	margin-right: 2%;
+	margin-left: 2%;
+}
+
+#sec_activites
+{
+	display: flex;
+	justify-content: space-around;
+}
+
+	/*Titre*/
+
+#title_activites
+{
+	margin-bottom: 2%;
+	margin-left: 3%
+}
+
+	/*Colonnes avec une seule activité*/
+
+.container_img
+{
+	width: 300px;
+	height: 400px;
+	overflow: hidden;
+	border-radius: 30px / 30px;
+	border-bottom-left-radius: 0px;
+	border-bottom-right-radius: 0px;
+}
+
+.img_activites
+{
+	width: 600px;
+	height: 400px;
+}
+
+.move_img_activite
+{
+	position: relative;
+	right: 150px;
+}
+
+	/*Colonnes avec deux activités*/
+
+.double_img
+{
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+}
+
+.container_img_2
+{
+	width: 300px;
+	height: 151px;
+	overflow: hidden;
+	border-radius: 20px / 20px;
+	border-bottom-left-radius: 0px;
+	border-bottom-right-radius: 0px
+}
+
+.img_petites_activites
+{
+	width: 300px;
+	height: auto;
+}
+
+#container_img_2_activite_2
+{
+	width: 300px;
+	height: 173px;
+	overflow: hidden;
+	border-radius: 30px / 30px;
+	border-bottom-left-radius: 0px;
+	border-bottom-right-radius: 0px;
+}
+
+#img_2_activites
+{
+	width: 300px;
+	height: auto;
+	position: relative;
+	bottom: 100px;
+}
+
+#container_img_2_activite_3
+{
+	width: 300px;
+	height: 130px;
+	overflow: hidden;
+	border-radius: 20px / 20px;
+	border-bottom-left-radius: 0px;
+	border-bottom-right-radius: 0px;
+	margin-top: 51px
+}
+
+#img_3_activites
+{
+	width: 300px;
+	height: auto;
+}
+
+	/*Liens*/
+
+.liens_activites
 {
 	text-decoration: none;
 	color: black;
 
+}
+
+.box_liens
+{
+	box-shadow: 0 0 5px gray;
+}
+
+.link_box
+{
+	border-radius: 30px / 30px;
+}
+
+.box_liens:hover
+{
+	box-shadow: 5px 20px 15px gray;
+}
+
+	/*Bordures bas de fiche*/
+
+.container_activites
+{
+	border: 3px solid #F2F2F2;
+	line-height: 3px;
+	padding-left: 10px;
+	border-radius: 30px / 30px ;
+	border-top-left-radius: 0;
+	border-top-right-radius: 0;
+}
+
+	/*Pied de page*/
+
+/*Container global*/
+
+#pied
+{
+	display: flex;
+	margin-top: 5%;
+	background-color: #F2F2F2;
+	justify-content: space-around;
+	padding: 2% 0 2% 0;
+}
+
+/*Liens*/
+
+.link_footer
+{
+	display: flex;
+	flex-direction: column;
+	text-decoration: none;
+	color: black;
+	line-height: 300%;
+}
+
+.link_footer:hover
+{
+	text-decoration: underline;
 }
