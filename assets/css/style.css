@@ -25,7 +25,7 @@ header
 
 header img
 {
-	height:50px;
+	height:auto;
 	width:100px;
 	/*Taille du logo de l'en-tête*/
 }
@@ -39,10 +39,17 @@ header img
 	/*Placement général du menu de navigation.*/
 }
 
+#heberg_activities
+{
+	display: flex;
+	justify-content: space-between;
+	margin-right: 2%;
+	margin-left: -10%;
+}
+
 .navig
 {
-	margin-left: 15px;
-	margin-right: 50px;
+	margin-right: 4%;
 	list-style-type: none;
 	/*Ajustement du menu de navigation et retrait des puces de la liste.*/
 }
@@ -231,7 +238,6 @@ header img
 	flex-direction: row-reverse;
 	justify-content: space-around;
 	width: 100%;
-	height: 665px;
 	padding-top: 15px;
 	margin-bottom: 60px;
 }
@@ -241,6 +247,7 @@ header img
 	display: flex;
 	width: 100%;
 	justify-content: center;
+	height: 80%;
 }
 
 #hebergements
@@ -270,7 +277,7 @@ header img
 #icone_pop
 {
 	align-self: center;
-	font-size: 25px;
+	font-size: 1.5rem;
 }
 
 	/*Container global*/
@@ -354,9 +361,10 @@ header img
 
 	/*Titre*/
 
-#hebergement
+#hebergements h3
 {
 	margin-left: 8%;
+	font-size: 1.1rem;
 }
 
 	/*Containers des "cartes" d'hébergements*/
@@ -375,12 +383,15 @@ header img
 {
 	background-color: white;
 	padding: 8px;
-	height: 200px;
+	width: 28%;
 	border-radius: 20px / 20px;
-	margin-bottom: 50px;
 	text-decoration: none;
 	color: black;
 	box-shadow: 1px 1px 5px gray;
+	height: 29%;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-around;
 }
 
 .lien_heberg:hover
@@ -392,11 +403,12 @@ header img
 
 .heberg_img
 {
-	height: 110px;
+	width: 95%;
 	overflow: hidden;
 	border-radius: 15px / 15px;
 	border-bottom-left-radius: 0px;
 	border-bottom-right-radius: 0px;
+	height: 55%;
 }
 
 .img_sec_1
@@ -427,7 +439,8 @@ header img
 	/*Noms et Prix*/
 .np
 {
-	line-height: 3px;
+	/*! line-height: 3px; */
+	margin: 0;
 }
 
 .euros
@@ -491,11 +504,16 @@ header img
 	margin-left: 3%
 }
 
+.colonne_activite
+{
+	width: 20%;
+}
+
 	/*Colonnes avec une seule activité*/
 
 .container_img
 {
-	width: 300px;
+	width: 100%;
 	height: 400px;
 	overflow: hidden;
 	border-radius: 30px / 30px;
@@ -526,23 +544,23 @@ header img
 
 .container_img_2
 {
-	width: 300px;
+	width: 100%;
 	height: 151px;
 	overflow: hidden;
-	border-radius: 20px / 20px;
+	border-radius: 30px / 30px;
 	border-bottom-left-radius: 0px;
 	border-bottom-right-radius: 0px
 }
 
 .img_petites_activites
 {
-	width: 300px;
+	width: 100%;
 	height: auto;
 }
 
 #container_img_2_activite_2
 {
-	width: 300px;
+	width: 100%;
 	height: 173px;
 	overflow: hidden;
 	border-radius: 30px / 30px;
@@ -552,7 +570,7 @@ header img
 
 #img_2_activites
 {
-	width: 300px;
+	width: 100%;
 	height: auto;
 	position: relative;
 	bottom: 100px;
@@ -560,10 +578,10 @@ header img
 
 #container_img_2_activite_3
 {
-	width: 300px;
+	width: 100%;
 	height: 130px;
 	overflow: hidden;
-	border-radius: 20px / 20px;
+	border-radius: 30px / 30px;
 	border-bottom-left-radius: 0px;
 	border-bottom-right-radius: 0px;
 	margin-top: 51px
@@ -571,7 +589,7 @@ header img
 
 #img_3_activites
 {
-	width: 300px;
+	width: 100%;
 	height: auto;
 }
 
@@ -587,6 +605,7 @@ header img
 .box_liens
 {
 	box-shadow: 0 0 5px gray;
+	width: 100%;
 }
 
 .link_box
