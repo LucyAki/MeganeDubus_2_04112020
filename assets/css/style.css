@@ -388,7 +388,7 @@ header img
 	text-decoration: none;
 	color: black;
 	box-shadow: 1px 1px 5px gray;
-	height: 29%;
+	height: 35%;
 	display: flex;
 	flex-direction: column;
 	justify-content: space-around;
@@ -494,6 +494,11 @@ header img
 {
 	display: flex;
 	justify-content: space-around;
+}
+
+#sec_activites h4
+{
+	font-size: 1rem;
 }
 
 	/*Titre*/
@@ -657,4 +662,54 @@ header img
 .link_footer:hover
 {
 	text-decoration: underline;
+}
+
+	/*Media Queries*/
+
+@media screen and (max-width: 1280px)
+
+/*Petites résolutions (tablettes et petits écrans)*/
+
+{
+
+/*Les hébergements*/
+
+	/*global*/
+
+	#sec_hebergements
+	{
+		flex-direction: column;
+	}
+
+	/*Les plus populaires*/
+	
+	#populaire
+	{
+		width: 100%;
+		margin-bottom: 5%;
+	}
+
+	#tete_pop
+	{
+		justify-content: space-between;
+		margin: 0 5% 0 5%;
+	}
+
+	#pop_fiches
+	{
+		flex-direction: row;
+		justify-content: space-around;
+	}
+
+	.lien_pop
+	{
+		width: 20%;
+	}
+
+	/*Hébergements*/
+
+	#hebergements
+	{
+		width: 100%;
+	}
 }
