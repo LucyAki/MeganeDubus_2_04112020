@@ -75,6 +75,7 @@ header img
 	color: #0065FC;
 	text-decoration: none;
 	padding: 23px 20px 0 20px;
+	font-weight: bold;
 	/*Couleur bleue pour le bouton d'inscription et retrait du soulignement du lien.*/
 }
 
@@ -744,6 +745,149 @@ header img
 
 	/*Activités*/
 
-	
+}
+
+@media screen and (max-width: 860px)
+
+/*filtres*/
+
+{
+	#les_filtres
+	{
+		flex-wrap: wrap;
+	}
+
+	.esp_filtres
+	{
+		margin: 1%;
+	}
+}
+
+@media screen and (max-width: 670px)
+
+/*Format téléphone*/
+
+{
+	/*tête*/
+
+	#nav_1
+	{
+		flex-direction: column-reverse;
+	}
+
+	#heberg_activities
+	{
+		margin-top: 3%;
+		align-self: center;
+		justify-content: space-between;
+	}
+
+	/*Barre de recherche*/
+
+	#barre
+	{
+		justify-content: center;
+	}
+
+	/*filtres*/
+
+	#les_filtres
+	{
+		flex-direction: column;
+		width: 100%;
+	}
+
+	/*Les plus populaires*/
+
+	#pop_fiches
+	{
+		flex-direction: column;
+	}
+
+	.lien_pop
+	{
+		width: 90%;
+		flex-direction: row;
+	}
+
+	.pop_img
+	{
+		min-width: 43%;
+		max-width: 43%;
+		height: auto;
+		overflow: hidden;
+		border-radius: 15px / 15px;
+		border-bottom-right-radius: 0em;
+		border-top-right-radius: 0em;
+		margin-right: 5%;
+	}
+
+	.img_pop
+	{
+		width: auto;
+		height: 143px;
+
+	}
+
+	.move_img_pop
+	{
+		position: relative;
+		right: 32%;
+	}
+
+	.move_img_pop2
+	{
+		width: 100%;
+	}
+
+		/*contenu*/
+
+	.pop_contenu
+	{
+		display: flex;
+		flex-direction: column;
+		justify-content: space-between;
+	}
+
+	.pop_text
+	{
+		margin: 8% 0 10% 0;
+	}
+
+	/*hébergements*/
+
+	.heberg_img
+	{
+		min-width: 43%;
+		max-width: 43%;
+		height: auto;
+		overflow: hidden;
+		border-radius: 15px / 15px;
+		border-bottom-right-radius: 0em;
+		border-top-right-radius: 0em;
+		margin-right: 5%;
+	}
+
+	.img_sec_1
+	{
+		width: auto;
+		height: 143px;
+
+	}
+
+		/*contenu*/
+
+	.pop_contenu
+	{
+		display: flex;
+		flex-direction: column;
+		justify-content: space-between;
+	}
+
+	.pop_text
+	{
+		margin: 8% 0 10% 0;
+	}
+
 
 }
