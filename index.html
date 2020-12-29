@@ -9,7 +9,7 @@
    <body>
       <!-- En-tête de la page-->
       <header>
-         <div>
+         <div id="head_logo">
             <img src="./assets/images/Reservia.png" alt="logo Reservia" title="Reservia">
          </div>
          <!--Titre principal (Logo)-->
@@ -18,10 +18,10 @@
             <ul id="nav_1">
                <!-- Onglets de nav -->
                <div id="heberg_activities">
-                  <li class="navig">
+                  <li class="navigation">
                      <a class="here" href="#hebergement">Hébergements</a>
                   </li>
-                  <li class="navig">
+                  <li class="navigation">
                      <a class="activities" href="#activites">Activités</a>
                   </li>
                </div>
@@ -52,22 +52,24 @@
             <div id="filtre">
                <span>Filtres</span>
             </div>
-            <!--Filtre économique-->
-            <a title="Ajouter le critère économique" href="" class="esp_filtres">
-               <div class="span_filtres">
-                  <i class="fas fa-money-bill-wave icones"></i>
-                  <p>Économique</p>
-               </div>
-               <!--Économique (icône)-->
-            </a>
-            <!--Filtre familial-->
-            <a title="Ajouter le critère familial" href="" class="esp_filtres" id="fam">
-               <div class="span_filtres">
-                  <i class="fas fa-child icones" id="famille"></i>
-                  <p>Familial</p>
-               </div>
-               <!--Familial (icône)-->
-            </a>
+            <div id="eco_fam">
+               <!--Filtre économique-->
+               <a title="Ajouter le critère économique" href="" class="esp_filtres">
+                  <div class="span_filtres">
+                     <i class="fas fa-money-bill-wave icones"></i>
+                     <p>Économique</p>
+                  </div>
+                  <!--Économique (icône)-->
+               </a>
+               <!--Filtre familial-->
+               <a title="Ajouter le critère familial" href="" class="esp_filtres" id="fam">
+                  <div class="span_filtres">
+                     <i class="fas fa-child icones" id="famille"></i>
+                     <p>Familial</p>
+                  </div>
+                  <!--Familial (icône)-->
+               </a>
+            </div>
             <!--Filtre romantique-->
             <a title="Ajouter le critère romantique" href="" class="esp_filtres">
                <div class="span_filtres">
@@ -187,17 +189,19 @@
                         <img class="img_sec_1 move_img" src="./assets/images/hebergements/4_small/heberg1.jpg" alt="Photo d'une chambre d'auberge">
                      </div>
                      <!--Photo de l'hébergement-->
-                     <div>
-                        <h4 class="np">Auberge la Cannebière</h4>
-                        <p class="np">Nuit à partir de <span class="euros">25€</span></p>
-                     </div>
-                     <!--Nom et prix de l'hébergement-->
-                     <div class="étoiles">
-                        <i class="fas fa-star stars"></i>
-                        <i class="fas fa-star stars"></i>
-                        <i class="fas fa-star stars"></i>
-                        <i class="fas fa-star stars"></i>
-                        <i class="fas fa-star stars_none"></i>
+                     <div class="heberg_contenu">
+                        <div>
+                           <h4 class="np">Auberge la Cannebière</h4>
+                           <p class="np">Nuit à partir de <span class="euros">25€</span></p>
+                        </div>
+                        <!--Nom et prix de l'hébergement-->
+                        <div class="étoiles">
+                           <i class="fas fa-star stars"></i>
+                           <i class="fas fa-star stars"></i>
+                           <i class="fas fa-star stars"></i>
+                           <i class="fas fa-star stars"></i>
+                           <i class="fas fa-star stars_none"></i>
+                        </div>
                      </div>
                      <!--Note donnée à l'hébergement avec des icônes en forme d'étoiles-->
                   </a>
@@ -207,17 +211,19 @@
                         <img class="img_sec_1 move_img" src="./assets/images/hebergements/4_small/heberg2.jpg" alt="Photo d'une chambre d'Hôtel">
                      </div>
                      <!--Photo de l'hébergement-->
-                     <div>
-                        <h4 class="np">Hôtel du port</h4>
-                        <p class="np">Nuit à partir de 52<span class="euros">€</span></p>
-                     </div>
-                     <!--Nom et prix de l'hébergement-->
-                     <div class="étoiles">
-                        <i class="fas fa-star stars"></i>
-                        <i class="fas fa-star stars"></i>
-                        <i class="fas fa-star stars"></i>
-                        <i class="fas fa-star stars"></i>
-                        <i class="fas fa-star stars"></i>
+                     <div class="heberg_contenu">
+                        <div>
+                           <h4 class="np">Hôtel du port</h4>
+                           <p class="np">Nuit à partir de 52<span class="euros">€</span></p>
+                        </div>
+                        <!--Nom et prix de l'hébergement-->
+                        <div class="étoiles">
+                           <i class="fas fa-star stars"></i>
+                           <i class="fas fa-star stars"></i>
+                           <i class="fas fa-star stars"></i>
+                           <i class="fas fa-star stars"></i>
+                           <i class="fas fa-star stars"></i>
+                        </div>
                      </div>
                      <!--Note donnée à l'hébergement avec des icônes en forme d'étoiles-->
                   </a>
@@ -227,17 +233,19 @@
                         <img class="img_sec_1 move_img" src="./assets/images/hebergements/4_small/heberg3.jpg" alt="Photo d'une chambre d'Hôtel">
                      </div>
                      <!--Photo de l'hébergement-->
-                     <div>
-                        <h4 class="np">Hôtel Les mouettes</h4>
-                        <p class="np">Nuit à partir de 76<span class="euros">€</span> </p>
-                     </div>
-                     <!--Nom et prix de l'hébergement-->
-                     <div class="étoiles">
-                        <i class="fas fa-star stars"></i>
-                        <i class="fas fa-star stars"></i>
-                        <i class="fas fa-star stars"></i>
-                        <i class="fas fa-star stars"></i>
-                        <i class="fas fa-star stars_none"></i>
+                     <div class="heberg_contenu">
+                        <div>
+                           <h4 class="np">Hôtel Les mouettes</h4>
+                           <p class="np">Nuit à partir de 76<span class="euros">€</span> </p>
+                        </div>
+                        <!--Nom et prix de l'hébergement-->
+                        <div class="étoiles">
+                           <i class="fas fa-star stars"></i>
+                           <i class="fas fa-star stars"></i>
+                           <i class="fas fa-star stars"></i>
+                           <i class="fas fa-star stars"></i>
+                           <i class="fas fa-star stars_none"></i>
+                        </div>
                      </div>
                      <!--Note donnée à l'hébergement avec des icônes en forme d'étoiles-->
                   </a>
@@ -248,17 +256,19 @@
                         <img class="img_sec_1 move_img_2" src="./assets/images/hebergements/4_small/heberg4.jpg" alt="Photo d'une chambre d'Hôtel">
                      </div>
                      <!--Photo de l'hébergement-->
-                     <div>
-                        <h4 class="np">Hôtel de la mer</h4>
-                        <p class="np">Nuit à partir de 46<span class="euros">€</span> </p>
-                     </div>
-                     <!--Nom et prix de l'hébergement-->
-                     <div class="étoiles">
-                        <i class="fas fa-star stars"></i>
-                        <i class="fas fa-star stars"></i>
-                        <i class="fas fa-star stars"></i>
-                        <i class="fas fa-star stars_none"></i>
-                        <i class="fas fa-star stars_none"></i>
+                     <div class="heberg_contenu">
+                        <div>
+                           <h4 class="np">Hôtel de la mer</h4>
+                           <p class="np">Nuit à partir de 46<span class="euros">€</span> </p>
+                        </div>
+                        <!--Nom et prix de l'hébergement-->
+                        <div class="étoiles">
+                           <i class="fas fa-star stars"></i>
+                           <i class="fas fa-star stars"></i>
+                           <i class="fas fa-star stars"></i>
+                           <i class="fas fa-star stars_none"></i>
+                           <i class="fas fa-star stars_none"></i>
+                        </div>
                      </div>
                      <!--Note donnée à l'hébergement avec des icônes en forme d'étoiles-->
                   </a>
@@ -268,17 +278,19 @@
                         <img class="img_sec_1" src="./assets/images/hebergements/4_small/heberg5.jpg" alt="Photo d'une chambre d'auberge">
                      </div>
                      <!--Photo de l'hébergement-->
-                     <div>
-                        <h4 class="np">Auberge Le Panier</h4>
-                        <p class="np">Nuit à partir de <span class="euros">23€</span></p>
-                     </div>
-                     <!--Nom et prix de l'hébergement-->
-                     <div class="étoiles">
-                        <i class="fas fa-star stars"></i>
-                        <i class="fas fa-star stars"></i>
-                        <i class="fas fa-star stars"></i>
-                        <i class="fas fa-star stars"></i>
-                        <i class="fas fa-star stars_none"></i>
+                     <div class="heberg_contenu">
+                        <div>
+                           <h4 class="np">Auberge Le Panier</h4>
+                           <p class="np">Nuit à partir de <span class="euros">23€</span></p>
+                        </div>
+                        <!--Nom et prix de l'hébergement-->
+                        <div class="étoiles">
+                           <i class="fas fa-star stars"></i>
+                           <i class="fas fa-star stars"></i>
+                           <i class="fas fa-star stars"></i>
+                           <i class="fas fa-star stars"></i>
+                           <i class="fas fa-star stars_none"></i>
+                        </div>
                      </div>
                      <!--Note donnée à l'hébergement avec des icônes en forme d'étoiles-->
                   </a>
@@ -288,17 +300,19 @@
                         <img class="img_sec_1 move_img_big" src="./assets/images/hebergements/4_small/heberg6.jpg" alt="Photo d'une chambre d'Hôtel">
                      </div>
                      <!--Photo de l'hébergement-->
-                     <div>
-                        <h4 class="np">Hôtel chez Amina</h4>
-                        <p class="np">Nuit à partir de 96<span class="euros">€</span> </p>
-                     </div>
-                     <!--Nom et prix de l'hébergement-->
-                     <div class="étoiles">
-                        <i class="fas fa-star stars"></i>
-                        <i class="fas fa-star stars"></i>
-                        <i class="fas fa-star stars"></i>
-                        <i class="fas fa-star stars"></i>
-                        <i class="fas fa-star stars"></i>
+                     <div class="heberg_contenu">
+                        <div>
+                           <h4 class="np">Hôtel chez Amina</h4>
+                           <p class="np">Nuit à partir de 96<span class="euros">€</span> </p>
+                        </div>
+                        <!--Nom et prix de l'hébergement-->
+                        <div class="étoiles">
+                           <i class="fas fa-star stars"></i>
+                           <i class="fas fa-star stars"></i>
+                           <i class="fas fa-star stars"></i>
+                           <i class="fas fa-star stars"></i>
+                           <i class="fas fa-star stars"></i>
+                        </div>
                      </div>
                      <!--Note donnée à l'hébergement avec des icônes en forme d'étoiles-->
                   </a>
