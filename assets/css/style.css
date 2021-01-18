@@ -13,7 +13,7 @@
 body
 {
 	font-family: raleway;
-	margin: 0;
+	margin: 0%;
 }
 
 /*En tête de la page.*/
@@ -24,6 +24,11 @@ header
 	justify-content: space-between;
 	margin-top: 0.5%;
 	/*Placement du header en général.*/
+}
+
+#head_logo
+{
+	margin-left: 0.5%;
 }
 
 header img
@@ -107,6 +112,14 @@ header img
 	Elargissement marge intérieure bordure top*/
 }
 
+
+/*Les titres*/
+
+#titres
+{
+	margin-left: 0.5%;
+}
+
 /*Section 1, recherche*/
 
 	/*La barre de recherche*/
@@ -160,6 +173,7 @@ header img
 {
 	display: flex;
 	margin-top: 20px;
+	margin-left: 0.5%;
 }
 
 #filtre
@@ -599,7 +613,7 @@ header img
 #img_2_activites
 {
 	width: 100%;
-	height: 100%;
+	height: auto;
 }
 
 #container_img_2_activite_3
@@ -631,7 +645,7 @@ header img
 .box_liens
 {
 	box-shadow: 0 0 5px gray;
-	width: 100%;
+	width: 120%;
 }
 
 .link_box
@@ -779,6 +793,11 @@ header img
 		margin-left: -5%;
 	}
 
+	.box_liens
+	{
+		width: 100%;
+	}
+
 	.container_img
 	{
 		height: 250px;
@@ -856,6 +875,21 @@ header img
 	#heberg_activities
 	{
 		justify-content: space-around;
+	}
+
+	.here:hover
+	{
+		border: none;
+	}
+
+	.activities:hover
+	{
+		border: none;
+	}
+
+	#inscription:hover
+	{
+		border: none;
 	}
 
 	/*Barre de recherche*/
@@ -1012,9 +1046,13 @@ header img
 	
 }
 
-@media screen and (max-width: 600px)
+@media screen and (max-width: 550px)
 {
-		/*tête*/
+
+	body 
+	{
+	 margin-right: -2%;
+	}
 
 	/*Navigation*/
 
@@ -1109,6 +1147,11 @@ header img
 		flex-direction: column;
 	}
 
+	.box_liens
+	{
+		width: 85%;
+	}
+
 	.double
 	{
 		flex-direction: column;
@@ -1126,6 +1169,11 @@ header img
 	{
 		margin-top: 5%;
 		margin-left: 0;
+	}
+
+	.move_img_activite
+	{
+		bottom: 50%;
 	}
 
 }
